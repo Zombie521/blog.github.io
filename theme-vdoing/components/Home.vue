@@ -100,7 +100,7 @@
               class="doc"
               v-for="(item, index) in homeData.features.length"
               :key="index"
-              :class="{ active: currentPageIndex === index }"
+              :class="{ active }"
             ></span>
           </div>
         </div>
@@ -150,11 +150,11 @@
           :tagsData="$categoriesAndTags.tags"
           :length="30"
         />
-        <div
+        <!-- <div
           class="custom-html-box card-box"
           v-if="homeSidebarB"
           v-html="homeSidebarB"
-        ></div>
+        ></div> -->
       </template>
     </MainLayout>
   </div>
@@ -200,10 +200,10 @@ export default {
     hasFeatures () {
       return !!(this.homeData.features && this.homeData.features.length)
     },
-    homeSidebarB () {
-      const { htmlModules } = this.$themeConfig
-      return htmlModules ? htmlModules.homeSidebarB : ''
-    },
+    // homeSidebarB () {
+    //   const { htmlModules } = this.$themeConfig
+    //   return htmlModules ? htmlModules.homeSidebarB : ''
+    // },
     showBanner () { // 当分页不在第一页时隐藏banner栏
       return this.$route.query.p
         && this.$route.query.p != 1
@@ -351,6 +351,7 @@ export default {
       position relative
       z-index 1
       overflow hidden
+      
       .hero
         text-align center
         margin-top 3rem
@@ -362,6 +363,7 @@ export default {
         h1
           margin 0
           font-size 3.2rem
+          color 
         .description, .action
           margin 1.5rem auto
         .description
@@ -399,8 +401,8 @@ export default {
           // color lighten($bannerTextColor,10%)
           color inherit
           .feature-img
-            width 10rem
-            height 10rem
+            width 3rem
+            height 3rem
             animation heart 1.2s ease-in-out 0s infinite alternate
             animation-play-state paused
           h2
@@ -435,8 +437,8 @@ export default {
             // color lighten($bannerTextColor,10%)
             color inherit
             .feature-img
-              width 10rem
-              height 10rem
+              width 3rem
+              height 3rem
             h2
               font-size 1.1rem
               font-weight 500
@@ -503,8 +505,8 @@ export default {
             h2
               font-size 1.1rem
             .feature-img
-              width 9rem
-              height 9rem
+              width 3rem
+              height 3rem
 // 719px以下
 @media (max-width $MQMobile)
   .home-wrapper

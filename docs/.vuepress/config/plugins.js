@@ -1,7 +1,7 @@
 // 插件配置
 module.exports = [
   // 本地插件
-  // [require('./plugins/love-me'), { // 鼠标点击爱心特效
+  // [require('../plugins/love-me'), { // 鼠标点击爱心特效
   //   color: '#11a8cd', // 爱心颜色，默认随机色
   //   excludeClassName: 'theme-vdoing-content' // 要排除元素的class, 默认空''
   // }],
@@ -33,7 +33,7 @@ module.exports = [
         },
         {
           title: '通过百度搜索本站的',
-          frontUrl: 'https://www.baidu.com/s?wd=site%3Axugaoyi.com%20',
+          frontUrl: 'https://www.baidu.com/s?wd=site%3Anianyi.com%20',
         },
       ],
     },
@@ -83,11 +83,11 @@ module.exports = [
     {
       choosen: 'gitalk',
       options: {
-        clientID: 'a6e1355287947096b88b',
-        clientSecret: 'f0e77d070fabfcd5af95bebb82b2d574d7248d71',
-        repo: 'blog-gitalk-comment', // GitHub 仓库
-        owner: 'xugaoyi', // GitHub仓库所有者
-        admin: ['xugaoyi'], // 对仓库有写权限的人
+        clientID: '74b739d84ebd5d2d2e2f',
+        clientSecret: 'd7a90be66e9045aab6fe7726e807b8c7304c13f3',
+        repo: 'gitalk-comments', // GitHub 仓库
+        owner: 'Zombie521', // GitHub仓库所有者
+        admin: ['Zombie521'], // 对仓库有写权限的人
         // distractionFreeMode: true,
         pagerDirection: 'last', // 'first'正序 | 'last'倒序
         id: '<%- (frontmatter.permalink || frontmatter.to.path).slice(-16) %>', //  页面的唯一标识,长度不能超过50

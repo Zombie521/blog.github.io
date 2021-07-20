@@ -20,7 +20,7 @@
     </div>
 
     <!-- repo link -->
-    <a
+    <!-- <a
       v-if="repoLink"
       :href="repoLink"
       class="repo-link"
@@ -29,7 +29,7 @@
     >
       {{ repoLabel }}
       <OutboundLink />
-    </a>
+    </a> -->
   </nav>
 </template>
 
@@ -96,23 +96,23 @@ export default {
       return null
     },
 
-    repoLabel () {
-      if (!this.repoLink) return
-      if (this.$site.themeConfig.repoLabel) {
-        return this.$site.themeConfig.repoLabel
-      }
+    // repoLabel () {
+    //   if (!this.repoLink) return
+    //   if (this.$site.themeConfig.repoLabel) {
+    //     return this.$site.themeConfig.repoLabel
+    //   }
 
-      const repoHost = this.repoLink.match(/^https?:\/\/[^/]+/)[0]
-      const platforms = ['GitHub', 'GitLab', 'Bitbucket']
-      for (let i = 0; i < platforms.length; i++) {
-        const platform = platforms[i]
-        if (new RegExp(platform, 'i').test(repoHost)) {
-          return platform
-        }
-      }
+    //   const repoHost = this.repoLink.match(/^https?:\/\/[^/]+/)[0]
+    //   const platforms = ['GitHub', 'GitLab', 'Bitbucket']
+    //   for (let i = 0; i < platforms.length; i++) {
+    //     const platform = platforms[i]
+    //     if (new RegExp(platform, 'i').test(repoHost)) {
+    //       return platform
+    //     }
+    //   }
 
-      return 'Source'
-    }
+    //   return 'Source'
+    // }
   }
 }
 </script>
