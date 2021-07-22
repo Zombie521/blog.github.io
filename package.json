@@ -5,6 +5,8 @@
     "dev": "vuepress dev docs",
     "build": "vuepress build docs",
     "deploy": "bash deploy.sh",
+    "pull": "bash pull.sh",
+    "push": "bash push.sh",
     "editFm": "node utils/editFrontmatter.js",
     "baiduPush": "node utils/baiduPush.js https://blog.nianyi.site && bash baiduPush.sh",
     "publish": "cd ./theme-vdoing && npm publish && cd ../ && npm run updateTheme",
