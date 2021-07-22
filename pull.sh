@@ -14,4 +14,4 @@ fi
 git init
 git add -A
 git commit -m "${msg}"
-git pull -f $githubUrl master:master
+git pull
