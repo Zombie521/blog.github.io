@@ -52,7 +52,7 @@ module.exports = {
   },
   blogger: {
     // 博主信息，显示在首页侧边栏
-    avatar: 'https://cdn.jsdelivr.net/gh/Zombie521/Zombie521.github.io@gh-pages/img/Avatar.jpg',
+    avatar: 'https://cdn.jsdelivr.net/gh/Zombie521/21sBlogImg@master/img/%E5%8D%9A%E5%AE%A2%E9%85%8D%E7%BD%AE%E5%9B%BE%E7%89%87/Avatar.jpg',
     name: 'yiyao Wu',
     slogan: '一个努力学习前端的小白',
   },
