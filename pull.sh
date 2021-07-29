@@ -3,6 +3,7 @@
 # 确保脚本抛出遇到的错误
 set -e
 
+
 if [ -z "$GITHUB_TOKEN" ]; then
   msg='originCode'
   githubUrl=git@github.com:Zombie521/blog.github.io
