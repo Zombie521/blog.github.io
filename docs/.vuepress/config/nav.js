@@ -11,6 +11,7 @@ module.exports = [
       { text: '数媒', link: '/media/' },
       { text: '其它学习', link: '/study/' },
       { text: '其它', link: '/other/' },
+      { text: '作者的文章', link: '/more/' },
     ],
   },
   { text: '关于', link: '/about/' },
